@@ -13,7 +13,7 @@ import Adminlogin from "./pages/AdminLogin/Adminlogin";
 import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
-  const url = "http://localhost:4000";
+  const url = "https://orderup-backend.onrender.com";
   const footer = "Design and Developed By Janak Sanjel.";
   const navigate = useNavigate();
 
