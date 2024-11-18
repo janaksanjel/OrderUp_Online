@@ -30,7 +30,7 @@ function Add() {
     try {
       // Send only SubAdminName and SubAdminPassword, no need for SubAdminId
       const response = await axios.post(
-        "http://localhost:4000/api/subadmin/add",
+        "https://orderup-backend.onrender.com/api/subadmin/add",
         {
           SubAdminName: subAdminName,
           SubAdminPassword: subAdminPassword,
