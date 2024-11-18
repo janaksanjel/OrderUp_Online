@@ -11,7 +11,7 @@ export const StoreContex = createContext(null);
 const StoreContexProvider = (props) => {
   const [cartItem, setCartItem] = useState({});
 
-  const url ="http://localhost:4000";
+  const url ="https://orderup-backend.onrender.com";
 
   const [token,settoken] =useState("")
 
