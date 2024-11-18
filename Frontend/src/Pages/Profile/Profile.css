@@ -1,0 +1,53 @@
+/* Profile.css */
+.profile {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #71bfff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transform: perspective(1000px) rotateX(5deg);
+  transition: transform 0.5s ease;
+}
+
+.profile:hover {
+  transform: perspective(1000px) rotateX(0deg);
+}
+
+.profile h1 {
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile .info {
+  margin-top: 30px;
+}
+
+.profile .info h2 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.profile .info div {
+  margin-bottom: 15px;
+}
+
+.profile .info label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.profile .info span {
+  color: #000000;
+}
+
+.profile .info div:last-child {
+  margin-bottom: 0;
+}

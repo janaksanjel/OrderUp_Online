@@ -1,0 +1,168 @@
+/* General styles for food items */
+.food-item {
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #00000015;
+  transition: 0.3s;
+  animation: feBlend 1s;
+}
+
+@keyframes feBlend {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.food-item-image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info {
+  padding: 20px;
+}
+
+.food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.food-item-name-rating p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Rating Stars */
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px; /* Adjust gap between stars */
+}
+
+.rating-stars span {
+  font-size: 14px; /* Default font size for stars */
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.rating-stars span.glowing-star {
+  color: #ffe600;
+}
+
+/* Ratings container */
+#ratings-container {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Adjusted gap for better spacing */
+}
+
+/* Food Item Price */
+.food-item-price {
+  font-size: 22px;
+  color: tomato;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.food-item-description {
+  font-size: 15px;
+  color: #363636;
+  padding: 3px;
+}
+
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-img-container .add {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.food-item-counter .add-minus,
+.food-item-counter .add-plus-green {
+  width: 25px;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .food-item-info {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .food-item-name-rating p {
+    font-size: 18px; /* Adjusted font size for food name on mobile */
+  }
+
+  .food-item-price {
+    font-size: 18px; /* Adjusted price font size for mobile */
+  }
+
+  .rating-stars span {
+    font-size: 10px; /* Smaller stars for mobile devices */
+  }
+
+  .food-item-description {
+    font-size: 14px; /* Smaller description font on mobile */
+  }
+
+  .food-item-img-container .add {
+    width: 30px; /* Smaller add button for mobile */
+  }
+
+  .food-item-counter {
+    gap: 8px; /* Slightly smaller gap between counter elements */
+    padding: 5px; /* Reduced padding for mobile view */
+  }
+
+  .food-item-counter .add-minus,
+  .food-item-counter .add-plus-green {
+    width: 20px; /* Smaller counter buttons */
+  }
+}
+
+/* Extra small screen adjustments (600px and below) */
+@media (max-width: 600px) {
+  .food-item {
+    box-shadow: 0px 0px 5px #00000010; /* Subtler shadow for smaller screens */
+  }
+
+  .food-item-name-rating p {
+    font-size: 16px; /* Smaller font size for food name */
+  }
+
+  .food-item-price {
+    font-size: 16px; /* Smaller price text */
+    margin: 8px 0; /* Adjusted margin for mobile */
+  }
+
+  .food-item-description {
+    font-size: 13px; /* Further reduced description size */
+  }
+  
+  .rating-stars span {
+    font-size: 8px; /* Even smaller stars for extra small screens */
+  }
+}

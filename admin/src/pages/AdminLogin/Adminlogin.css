@@ -1,0 +1,113 @@
+/* Container for centering the login card */
+/* Container for centering the login card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Ensures the container takes full viewport height */
+  width: 100%;
+  /* Ensures the container takes full viewport width */
+  background: linear-gradient(135deg, #ececec 0%, #f3f3f3 100%);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  /* Added padding to prevent the card from touching the edges on small screens */
+}
+
+
+/* General styles for the login card */
+.login-card {
+  width: 360px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.login-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card header */
+.card-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.log {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #007bff;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn:active {
+  background-color: #003f7f;
+  transform: scale(0.98);
+}
+
+/* Extra touch of subtle animations */
+.login-card::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 123, 255, 0.15);
+  top: -25px;
+  right: -25px;
+
+}

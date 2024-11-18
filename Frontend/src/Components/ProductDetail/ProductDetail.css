@@ -1,0 +1,210 @@
+/* Container for the product details */
+.product-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Image styling */
+.product-image {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 30px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product info styling */
+.product-info {
+  flex: 2;
+}
+
+.product-info h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-info .description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.product-info .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e53935; /* Use a color that fits your theme */
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.product-detail-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.product-detail-buttons button {
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff; /* Primary color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  width: 90px;
+  height: 50px;
+}
+
+.product-detail-buttons button:hover {
+  background-color: #0056b3; /* Darker shade of primary color */
+}
+
+.product-detail-buttons .buy-now {
+  background-color: #e53935; /* Secondary color for Buy Now button */
+}
+
+.product-detail-buttons .buy-now:hover {
+  background-color: #c62828; /* Darker shade of secondary color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .product-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .product-info h1 {
+    font-size: 2rem;
+  }
+
+  .product-info .description {
+    font-size: 1rem;
+  }
+
+  .product-info .price {
+    font-size: 1.5rem;
+  }
+
+  .product-detail-buttons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-detail-buttons button {
+    width: 100%; /* Make buttons full width on mobile */
+    max-width: 200px; /* Optional: Limit max width of buttons */
+  }
+}
+
+/* Rating styling */
+.rating {
+  display: inline-block;
+  margin-left: 0; /* Adjusted for mobile */
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: none; /* Reset float for mobile */
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 1.5rem; /* Adjusted font size for mobile */
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #ffd000;
+  transition: color 0.3s;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start; /* Align to start on mobile */
+}
+
+.rating-stars span {
+  font-size: 1.5rem; /* Adjusted font size for mobile */
+  color: #ccc; /* Default color for unselected stars */
+}
+
+.rating-stars input[type="radio"] {
+  display: none;
+}
+
+.rating-stars label {
+  font-size: 1.5rem;
+  color: #ccc; /* Default color for unselected stars */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.glowing-star {
+  color: #f5c518; /* Gold color for selected stars */
+}
+
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: #f5c518; /* Hover color for the stars */
+}
+
+/* Extra small screen adjustments (600px and below) */
+@media (max-width: 600px) {
+  .product-info h1 {
+    font-size: 1.5rem; /* Smaller heading for very small screens */
+  }
+
+  .product-info .description {
+    font-size: 0.9rem; /* Smaller description text */
+  }
+
+  .product-info .price {
+    font-size: 1.2rem; /* Smaller price text */
+  }
+
+  .rating-stars span {
+    font-size: 1.2rem; /* Smaller stars for very small screens */
+  }
+
+  .product-detail-buttons button {
+    width: 100%; /* Ensure buttons take full width on very small screens */
+    max-width: 100%; /* No max-width on very small screens */
+  }
+}

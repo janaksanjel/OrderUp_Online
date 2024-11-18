@@ -1,0 +1,284 @@
+/* General styles for the food display section */
+.food-display {
+  margin-top: 30px;
+}
+
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  /* Responsive font size */
+  font-weight: 600;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  /* Responsive grid layout */
+  margin-top: 30px;
+  gap: 20px;
+  /* Adjusted gap for better spacing */
+  row-gap: 40px;
+}
+
+/* Search bar styles */
+.search-bar {
+  width: 100%;
+  /* Take full width */
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input[type=text] {
+  max-width: 180px;
+  height: 20px;
+  background-color: #fff;
+  color: #242424;
+  padding: 0.15rem 0.5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 10px 20px -18px blue;
+  border-bottom: 3px solid #0d14e9;
+  transition: 0.10s ease;
+}
+
+.input[type=text]:hover {
+  outline: 2px solid #0d14e9;
+  max-width: 200px;
+}
+
+.input[type=text]:focus {
+  border-bottom: 3px solid #0d14e9;
+  border-radius: 5px 5px 2px 2px;
+  transform: scale(1.1);
+}
+
+/* Sort dropdown styles */
+.sort-dropdown {
+  margin-left: auto;
+  /* Move to the end of the container */
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  /* Align to the right */
+}
+
+.sort-dropdown label {
+  margin-right: 10px;
+}
+
+.sort-dropdown select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Mobile-specific styles for improved responsiveness */
+@media (max-width: 768px) {
+  .food-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center-align the contents */
+  }
+
+  .food-display h2 {
+    font-size: 20px;
+    /* Smaller heading font size on mobile */
+    text-align: center;
+    /* Center-align heading text */
+  }
+
+  .food-display-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /* Adjust grid column size */
+    gap: 15px;
+    /* Reduced gap for smaller screens */
+    row-gap: 30px;
+    /* Reduced row-gap for smaller screens */
+  }
+
+  .search-bar {
+    margin-bottom: 10px;
+    /* Adjust margin for mobile */
+  }
+
+  .sort-dropdown {
+    margin-left: 0;
+    justify-content: center;
+    /* Center the dropdown on mobile */
+    margin-top: 10px;
+    /* Adjust top margin for mobile */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center-align items */
+    gap: 5px;
+    /* Add gap between label and select */
+  }
+
+  .sort-dropdown label {
+    margin-right: 0;
+    /* Reset margin for vertical stacking */
+  }
+
+  .sort-dropdown select {
+    font-size: 14px;
+    /* Slightly smaller font size for dropdown */
+    padding: 6px;
+    /* Reduced padding for better fit */
+  }
+}
+
+/* Smaller screen adjustments (600px and below) */
+@media (max-width: 600px) {
+  .food-display-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Smaller columns on very small screens */
+    gap: 10px;
+    /* Further reduced gap for very small screens */
+    row-gap: 20px;
+    /* Further reduced row-gap for very small screens */
+  }
+
+  .search-bar input {
+    padding: 8px;
+    /* Adjust padding for a more compact input */
+    font-size: 14px;
+    /* Reduced font size for input field */
+  }
+
+  .sort-dropdown {
+    flex-direction: column;
+    /* Ensure vertical stacking for very small screens */
+    align-items: center;
+    gap: 5px;
+    /* Add a gap between label and select */
+    margin-top: 10px;
+  }
+
+  .sort-dropdown label {
+    margin-right: 0;
+    /* Reset margin for vertical stacking */
+  }
+
+  .input[type=text] {
+    max-width: 100%;
+    /* Ensure input takes full width on small screens */
+    transform: scale(1);
+    /* Reset scale to avoid overflow */
+  }
+}
+
+.food-item-with-tag {
+  position: relative;
+}
+
+.recommended-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 128, 0, 0.8);
+  /* Green background */
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* From Uiverse.io by m1her */
+.radio-input {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: black;
+  padding: 4px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.radio-input input {
+  display: none;
+}
+
+.radio-input .label {
+  width: 90px;
+  height: 60px;
+  background: linear-gradient(to bottom, #333333, rgb(36, 35, 35));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: all 0.1s linear;
+  border-top: 1px solid #4e4d4d;
+  background-color: #333333;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 17px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.label:has(input[type="radio"]:checked) {
+  box-shadow: 0px 17px 5px 1px rgba(0, 0, 0, 0);
+  background: linear-gradient(to bottom, #1d1d1d, #1d1d1d);
+  border-top: none;
+}
+
+.label:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.label:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 103%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to bottom,
+      transparent 10%,
+      transparent,
+      transparent 90%);
+  transition: all 0.1s linear;
+  z-index: -1;
+}
+
+.label:has(input[type="radio"]:checked)::before {
+  background: linear-gradient(to bottom,
+      transparent 10%,
+      #cae2fd63,
+      transparent 90%);
+}
+
+.label .text {
+  color: black;
+  font-size: 15px;
+  line-height: 12px;
+  padding: 0px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+  text-shadow:
+    -1px -1px 1px rgb(224, 224, 224, 0.1),
+    0px 2px 3px rgb(0, 0, 0, 0.3);
+}
+
+.label input[type="radio"]:checked+.text {
+  color: rgb(202, 226, 253);
+  text-shadow: 0px 0px 12px #cae2fd;
+}

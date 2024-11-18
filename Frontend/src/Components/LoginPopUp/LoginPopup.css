@@ -1,0 +1,128 @@
+.login-popup {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  display: grid;
+  place-items: center;
+}
+
+.login-popup-container {
+  width: max(13vw, 330px);
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+}
+
+.login-popup-title h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.login-popup-title img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-popup-inputs input {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.login-popup-inputs input:focus {
+  border-color: #007BFF;
+  background-color: #f0f8ff;
+}
+
+.login-popup-inputs input[type='password'] {
+  border: 1px solid #ff6347; /* Tomato border color */
+}
+
+.login-popup-inputs input[type='password']:focus {
+  border-color: #007BFF;
+  background-color: #f0f8ff;
+}
+
+.login-popup-container button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(255, 38, 0);
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-popup-container button:hover {
+  background-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+.login-popup-condition {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: -10px;
+}
+
+.login-popup-condition input {
+  margin-top: 5px;
+}
+
+.login-popup-condition p {
+  font-size: 0.875em;
+  color: #555;
+}
+
+.login-popup p {
+  font-size: 0.875em;
+  color: #666;
+}
+
+.login-popup p span {
+  color: rgb(255, 38, 0);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.login-popup p span:hover {
+  color: #ff0000;
+}

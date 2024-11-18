@@ -1,0 +1,129 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background-image: url(/public/header-img33.png);
+    background-size: cover; /* Changed to cover for a better fit */
+    background-position: center; /* Center the image for a balanced look */
+    position: relative;
+    border-radius: 10px; /* Optional: Add rounded corners for a modern look */
+  }
+  
+  .header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6%;
+    animation: feBlend 3s;
+  }
+  
+  @keyframes feBlend {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .header-contents h2 {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: max(4.5vw, 22px);
+    line-height: 1.2; /* Added for better readability */
+  }
+  
+  .header-contents p {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5vw;
+    line-height: 1.4; /* Improved line height for readability */
+  }
+  
+  .header-contents button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  }
+  
+  .header-contents button:hover {
+    background-color: #f0f0f0; /* Optional: Slight color change on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .header {
+      height: 40vw;
+    }
+  
+    .header-contents {
+      gap: 2vw;
+      max-width: 60%;
+    }
+  
+    .header-contents h2 {
+      font-size: max(5vw, 20px);
+    }
+  
+    .header-contents p,
+    .header-contents button {
+      font-size: 2vw;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .header {
+      height: 50vw;
+    }
+  
+    .header-contents {
+      gap: 3vw;
+      max-width: 70%;
+      bottom: 12%;
+      left: 8%;
+    }
+  
+    .header-contents h2 {
+      font-size: max(6vw, 18px);
+    }
+  
+    .header-contents p,
+    .header-contents button {
+      font-size: 3vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      height: 60vw;
+    }
+  
+    .header-contents {
+      gap: 4vw;
+      max-width: 80%;
+      bottom: 15%;
+      left: 10%;
+    }
+  
+    .header-contents h2 {
+      font-size: max(8vw, 16px);
+    }
+  
+    .header-contents p,
+    .header-contents button {
+      font-size: 4vw;
+    }
+  
+    .header-contents button {
+      padding: 1vw 2vw;
+    }
+  }
+  

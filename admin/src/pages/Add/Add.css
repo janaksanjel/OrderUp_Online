@@ -1,0 +1,83 @@
+/* Main container for the Add Subadmin form */
+.add-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading style */
+.add-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.1em;
+  color: #34495e;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f7fa;
+}
+
+/* Button styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2em;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Success and error message styling */
+.success-message {
+  color: #27ae60;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .add-container {
+    padding: 15px;
+  }
+
+  .add-container h2 {
+    font-size: 1.8em;
+  }
+}

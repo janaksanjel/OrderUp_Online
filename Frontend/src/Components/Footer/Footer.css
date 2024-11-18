@@ -1,0 +1,106 @@
+/* General footer styles */
+.footer {
+    color: aliceblue;
+    background-color: #424141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 8vw 20px;
+    margin-top: 100px;
+}
+
+/* Footer content grid layout */
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+/* Common styles for footer content sections */
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* List item styles within footer content */
+.footer-content-left li,
+.footer-content-center li,
+.footer-content-right li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Heading styles within center and right content sections */
+.footer-content-center h2,
+.footer-content-right h2 {
+    color: white;
+}
+
+/* Social item image styles */
+.footer-social-item img {
+    width: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Horizontal rule styles */
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+}
+
+/* Responsive adjustments for tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 60px 5vw 20px; /* Adjust padding for smaller screens */
+        margin-top: 80px; /* Adjust top margin */
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        gap: 40px; /* Adjust gap between stacked sections */
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        align-items: center; /* Center align items in stacked sections */
+    }
+
+    .footer-social-item img {
+        width: 25px; /* Slightly smaller social icons */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Extra small screen adjustments (600px and below) */
+@media (max-width: 600px) {
+    .footer {
+        padding: 40px 3vw 20px; /* Further reduce padding for mobile devices */
+        margin-top: 60px; /* Further adjust top margin */
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr; /* Ensure single column layout for very small screens */
+        gap: 30px; /* Reduced gap between sections */
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        align-items: center; /* Center align items for mobile view */
+    }
+
+    .footer-social-item img {
+        width: 20px; /* Even smaller social icons for mobile */
+        margin-right: 8px; /* Adjust margin for mobile screens */
+    }
+}

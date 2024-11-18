@@ -1,0 +1,255 @@
+/* Order.css */
+
+/* General Table Styling */
+.order-table {
+
+  width: 100%; /* Make the table full width but with some margins */
+  max-width: auto; /* Reduce the maximum width */
+  margin: 20px auto; /* Reduce margin for a more compact look */
+  border: 1px solid #e5e5e5;
+  border-radius: 10px; /* Slightly reduced border radius */
+  padding: 10px; /* Reduce padding */
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+.order-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-list th,
+.order-list td {
+  padding: 8px; /* Reduce padding for a more compact table */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-list th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.order-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.order-list tbody tr:hover {
+  background-color: #e9e9e9;
+}
+
+.order-list td span {
+  font-size: 12px; /* Reduce font size */
+  color: #666;
+}
+
+.order-list select {
+  padding: 6px; /* Reduce padding */
+  font-size: 12px; /* Reduce font size */
+  border: 1px solid #000000;
+  border-radius: 3px;
+  background-color: #02ff39;
+  color: #000000;
+  cursor: pointer;
+}
+
+.invoice {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Reduce padding */
+  cursor: pointer;
+  font-size: 12px; /* Reduce font size */
+}
+
+.invoice:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for search */
+.ui-input-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.ui-input {
+  width: 100%;
+  padding: 8px 10px 8px 40px; /* Reduce padding */
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  transition: border-color 0.3s;
+}
+
+.ui-input:focus {
+  border-color: #6c63ff;
+}
+
+.ui-input-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #6c63ff;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.ui-input:focus + .ui-input-underline {
+  transform: scaleX(1);
+}
+
+.ui-input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(108, 99, 255, 0.1);
+  transition: width 0.3s;
+}
+
+.ui-input:focus ~ .ui-input-highlight {
+  width: 100%;
+}
+
+.ui-input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: color 0.3s;
+}
+
+.ui-input:focus ~ .ui-input-icon {
+  color: #6c63ff;
+}
+
+.ui-input-icon svg {
+  width: 18px; /* Slightly smaller icon */
+  height: 18px; /* Slightly smaller icon */
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+@media (max-width: 768px) {
+  .order-table {
+    margin: 10px;
+    padding: 8px;
+    max-width: 100%; /* Ensure the table takes full width on smaller screens */
+  }
+
+  .order-list th,
+  .order-list td {
+    padding: 6px; /* Reduce padding */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .order-list td span {
+    font-size: 10px; /* Further reduce font size */
+  }
+
+  .order-list select {
+    font-size: 10px; /* Further reduce font size */
+    padding: 4px; /* Reduce padding */
+  }
+
+  .ui-input-container {
+    max-width: 100%;
+  }
+
+  .ui-input {
+    padding: 8px 8px 8px 36px; /* Adjust padding */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .ui-input-icon {
+    left: 8px;
+   }
+
+  .ui-input-icon svg {
+    width: 16px; /* Further reduce icon size */
+    height: 16px; /* Further reduce icon size */
+  }
+}
+
+
+
+
+
+/* Container for payment status icons */
+.payment-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the icons */
+.payment-status span {
+ 
+  font-size: 50px; /* Adjust size as needed */
+  margin: 0 8px; /* Space around the icons */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* back button css */
+
+
+  /* Container styling */
+  .back-link-container {
+    text-align: left; /* Align the link to the left */
+    margin: 30px;
+  }
+  
+  /* Styling for the Back link */
+  .back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;  /* Blue background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  }
+  
+  /* Hover and focus effects */
+  .back-link:hover,
+  .back-link:focus {
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: translateY(-2px);  /* Slight movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+  }
+  
+  /* Active (clicked) state */
+  .back-link:active {
+    background-color: #003f7f;
+    transform: translateY(0);  /* Reset transform on click */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .back-link {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

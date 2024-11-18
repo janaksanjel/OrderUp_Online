@@ -1,0 +1,88 @@
+/* PlaceOrde.css */
+.place-order {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-left,
+.place-order-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.place-order-left {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.multi-field {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.multi-field input {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.place-order-right {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-total {
+  margin-bottom: 20px;
+}
+
+.card-total h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.buttoncheckout {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #00b7ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttoncheckout:hover {
+  background-color: #0084ff;
+}
+

@@ -1,0 +1,152 @@
+/* Add.css */
+
+.add {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add form {
+    width: 100%;
+  }
+  
+  .add-img-upload {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .add-img-upload p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .add-img-upload label {
+    cursor: pointer;
+  }
+  
+  .add-img-upload img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px dashed #4ca1af;
+    border-radius: 10px;
+    padding: 15px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-img-upload img:hover {
+    border-color: #2c3e50;
+  }
+  
+  .add-product-name, .add-product-descrption, .add-category, .add-price {
+    margin-bottom: 25px;
+  }
+  
+  .add-product-name p, .add-product-descrption p, .add-category p, .add-price p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .add-product-name input, .add-product-descrption textarea, .add-category select, .add-price input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-product-name input:focus, .add-product-descrption textarea:focus, .add-category select:focus, .add-price input:focus {
+    border-color: #4ca1af;
+    outline: none;
+  }
+  
+  .add-product-descrption textarea {
+    resize: none;
+  }
+  
+  .add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .add-category, .add-price {
+    flex: 1;
+  }
+  
+  .add-button {
+    padding: 12px 20px;
+    background: #4ca1af;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .add-button:hover {
+    background: #2c3e50;
+  }
+  
+
+  /* back button css */
+
+
+  /* Container styling */
+.back-link-container {
+  text-align: left; /* Align the link to the left */
+  margin: 20px;
+}
+
+/* Styling for the Back link */
+.back-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;  /* Blue background */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;  /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Hover and focus effects */
+.back-link:hover,
+.back-link:focus {
+  background-color: #0056b3;  /* Darker blue on hover */
+  transform: translateY(-2px);  /* Slight movement on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+}
+
+/* Active (clicked) state */
+.back-link:active {
+  background-color: #003f7f;
+  transform: translateY(0);  /* Reset transform on click */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .back-link {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+

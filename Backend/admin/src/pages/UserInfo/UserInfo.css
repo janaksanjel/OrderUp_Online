@@ -1,0 +1,102 @@
+.user-list-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-info p span {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+
+
+/* back button css */
+
+
+  /* Container styling */
+  .back-link-container {
+    text-align: left; /* Align the link to the left */
+    margin: 30px;
+  }
+  
+  /* Styling for the Back link */
+  .back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;  /* Blue background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  }
+  
+  /* Hover and focus effects */
+  .back-link:hover,
+  .back-link:focus {
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: translateY(-2px);  /* Slight movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+  }
+  
+  /* Active (clicked) state */
+  .back-link:active {
+    background-color: #003f7f;
+    transform: translateY(0);  /* Reset transform on click */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .back-link {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

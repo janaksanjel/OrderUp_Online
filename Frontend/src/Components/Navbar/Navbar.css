@@ -1,0 +1,233 @@
+/* General Navbar styles */
+.navbar {
+  position: sticky; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px; /* Adjusted padding for better fit */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  z-index: 1000;
+  border-radius: 20px; /* Reduced border radius for a sleeker look */
+}
+
+.navbar .logo {
+  width: 140px; /* Unified size for web and mobile */
+  height: auto;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 17px; /* Unified font size for better consistency */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Reduced gap for balanced spacing */
+}
+
+.navbar-right .offer {
+  cursor: pointer;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 15px; /* Slightly reduced for better look on both mobile and web */
+  color: #49557e;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px 25px; /* Adjusted padding for a sleeker button */
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  width: 8px; /* Reduced size for a subtler effect */
+  height: 8px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  top: -8px;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 130px;
+  }
+
+  .navbar-menu {
+    gap: 18px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 25px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar-right button {
+    padding: 7px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 15px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right img {
+    width: 18px;
+  }
+
+  .navbar-right button {
+    padding: 6px 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none; /* Hide menu on smaller screens for a cleaner look */
+  }
+
+  .navbar {
+    padding: 10px 15px; /* Further reduced padding for mobile devices */
+  }
+}
+
+/* Profile and Dropdown Styles */
+.navbar-profile {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav-profile-drop-down {
+  border: 1px solid rgb(0, 0, 0); /* Reduced border thickness for a cleaner look */
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 1;
+  min-width: 160px;
+}
+
+.navbar-profile:hover .nav-profile-drop-down {
+  display: block;
+}
+
+.nav-profile-drop-down li {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-profile-drop-down li:hover {
+  background-color: #f2f2f2;
+}
+
+.nav-profile-drop-down img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.nav-profile-drop-down p {
+  margin: 0;
+  font-size: 13px;
+  color: #333333;
+}
+
+/* Mobile support by Janak */
+/* Mobile-specific styles for screens 600px and below */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px; /* Adjust padding to make the navbar more compact */
+    border-radius: 10px; /* Slightly reduce the border radius */
+  }
+
+  .navbar .logo {
+    width: 100px; /* Reduce logo size for better fit */
+  }
+
+  .navbar-menu {
+    display: none; /* Hide the navbar menu on mobile */
+  }
+
+  .navbar-right {
+    gap: 10px; /* Reduce the gap between elements */
+    flex-direction: row; /* Align items in a row for better visibility */
+  }
+
+  .navbar-profile,
+  .navbar-search-icon {
+    width: 30px; /* Ensure consistent sizing for small icons */
+    height: 30px;
+  }
+
+  .navbar-profile img,
+  .navbar-search-icon img {
+    width: 100%; /* Make images fill the icon containers */
+    height: auto;
+  }
+
+  .navbar-right img {
+    width: 22px; /* Adjust icon size for visibility */
+  }
+
+  .navbar button {
+    padding: 6px 15px; /* Adjust padding for buttons */
+    font-size: 12px; /* Reduce font size for better fit on smaller screens */
+  }
+
+  .navbar-profile {
+    display: flex; /* Ensure profile section is visible and accessible */
+  }
+}

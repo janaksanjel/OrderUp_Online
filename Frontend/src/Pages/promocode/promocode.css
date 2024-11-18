@@ -1,0 +1,104 @@
+
+  
+  .promo-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card {
+    overflow: hidden;
+    border-radius: 0.75rem;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    position: relative;
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    background: linear-gradient(135deg, #ffae00, #cc00ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .promo-text {
+    position: absolute;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .text-1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ff5722;
+  }
+  
+  .text-2 {
+    margin-top: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .text-2 span:first-child {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    font-weight: 900;
+  }
+  
+  .text-2 span:last-child {
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .action {
+    margin-top: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .action:hover {
+    background-color: #333;
+  }
+  
+  .date {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #9ca3af;
+  }
+  
