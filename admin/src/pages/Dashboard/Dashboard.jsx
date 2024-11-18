@@ -18,7 +18,7 @@ function Dashboard() {
       try {
         // Assuming the backend is running on http://localhost:5000
         const response = await axios.get(
-          "http://localhost:4000/api/subadmin/fetch"
+          "https://orderup-backend.onrender.com/api/subadmin/fetch"
         );
         setSubAdmins(response.data.subadmins); // Update state with subadmins
       } catch (error) {
