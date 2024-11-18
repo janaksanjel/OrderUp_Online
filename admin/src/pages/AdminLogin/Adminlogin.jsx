@@ -23,7 +23,7 @@ function SuperAdminLogin() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/superadmin/login",
+        "https://orderup-backend.onrender.com/api/superadmin/login",
         {
           SuperAdminName: username,
           SuperAdminPassword: password,
