@@ -25,7 +25,7 @@ function Adminlogin() {
     e.preventDefault(); // Prevent the default form submission
 
     try {
-      const response = await axios.post('http://localhost:4000/api/subadmin/login', {
+      const response = await axios.post('https://orderup-backend.onrender.com/api/subadmin/login', {
         SubAdminName: username,
         SubAdminPassword: password
       });
