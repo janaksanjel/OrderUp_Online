@@ -1,6 +1,7 @@
 import express from 'express';
 import ratingMiddleware from '../middleware/ratingMiddleware.js'; // Ensure this middleware is correctly defined
-import { addRating, updateRating, getItemRatings } from '../Controller/ratingcontroller.js';
+import { addRating, updateRating, getItemRatings } from '../Controller/RatingController.js';
+
 
 const ratingRouter = express.Router();
 
