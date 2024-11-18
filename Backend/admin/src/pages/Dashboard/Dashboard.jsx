@@ -47,7 +47,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchFoodList = async () => {
       try {
-        const res = await axios.get('http://localhost:4000/api/food/list');
+        const res = await axios.get('https://orderup-backend.onrender.com/api/food/list');
         if (res.data.success) {
           setFoodList(res.data.data);
           setTotalItems(res.data.data.length);
