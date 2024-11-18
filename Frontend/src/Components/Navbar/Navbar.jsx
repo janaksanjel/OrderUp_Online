@@ -27,7 +27,7 @@ function Navbar({ setshowlogin }) {
   
     const handleLogoClick = (e) => {
       e.preventDefault(); // Prevent the default link behavior
-      window.location.href = 'http://localhost:5173/'; // Navigate to the URL, which will cause the page to reload
+      window.location.href = 'https://orderup-frontend.onrender.com/'; // Navigate to the URL, which will cause the page to reload
     };
 
   return (
