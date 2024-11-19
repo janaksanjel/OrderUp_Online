@@ -39,3 +39,27 @@ Special thanks to everyone who provided valuable contributions and feedback to i
 
 Project Status
 This project is actively maintained and under continuous development. Exciting new features and enhancements are planned for future updates!
+
+![Screenshot 2024-11-14 155150](https://github.com/user-attachments/assets/675db22e-75a2-4d26-89f8-059dafc2f000)
+
+![Screenshot 2024-11-14 154632](https://github.com/user-attachments/assets/b24f673a-7406-4564-b77f-79fa08b04e7a)
+
+![Screenshot 2024-11-14 154909](https://github.com/user-attachments/assets/22a3259c-22ac-469d-91f4-51cc27d034af)
+
+![Screenshot 2024-11-14 155040](https://github.com/user-attachments/assets/29031254-a742-46dc-a02b-173abade094c)
+
+
+![Screenshot 2024-11-14 154653](https://github.com/user-attachments/assets/19d125a6-9e7f-4776-8bc8-aa4381149ebe)
+
+
+
+
+Thank you for taking the time to visit! If you have any questions, feedback, or just want to chat about technology, feel free to reach out. Let's stay connected and continue exploring the exciting world of software development together. Wishing you all the best on your own journey in the realm of technology!
+
+Checkitout Frontend- https://orderup-frontend.onrender.com
+Checkitout Admin - https://orderup-admin.onrender.com
+
+
+
+
+
