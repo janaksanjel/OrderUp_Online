@@ -64,7 +64,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get('http://localhost:4000/api/user/userinfo');
+        const res = await axios.get('https://orderup-backend.onrender.com/api/user/userinfo');
         if (res.data.success) {
           setUsers(res.data.data);
           setTotalCustomers(res.data.data.length);
@@ -81,7 +81,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get('http://localhost:4000/api/order/list');
+        const res = await axios.get('https://orderup-backend.onrender.com/api/order/list');
         if (res.data.success) {
           const ordersData = res.data.data;
 
