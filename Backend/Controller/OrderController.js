@@ -5,7 +5,7 @@ import Stripe from 'stripe';
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-    const frontend_url = "http://localhost:5173"; //this port is come from frontend port number faraka
+    const frontend_url = "https://orderup-frontend.onrender.com"; //this port is come from frontend port number faraka
     // vaya we need change this link or same as front running port
                                                   
 
