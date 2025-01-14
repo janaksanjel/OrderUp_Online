@@ -6,12 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 import StoreContexProvider from './Context/StoreContex.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
- <BrowserRouter>
+ <HashRouter>
  <StoreContexProvider>
  <App />
  </StoreContexProvider>
  
- </BrowserRouter>
+ </HashRouter>
     
   
 )
